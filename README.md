@@ -1,2 +1,2 @@
 # SwissSharedMobility
-test
+Documentation for the Swiss Shared Mobility Specification.
