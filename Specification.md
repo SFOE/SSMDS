@@ -71,8 +71,12 @@ Describes the "station" where a vehicle can be rented.
  
  
  ### SwissSharedMobilityPushStatus
-Describes the "station" where a vehicle can be rented.
+Describes the "status" of a station.
  
  
- 
-
+| Field Name  | Required | Defines|
+| ------------- | ------------- | --- |
+| vehicle_id | yes | Unique vehicle id. Is defined by the provider|
+| vehicle_status | yes | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
+| vehicle_type | yes | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
+| charging_status | optional | e-vehicles have to indicate the charging status of the battery. |
