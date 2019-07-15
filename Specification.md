@@ -9,7 +9,7 @@ The SwissSharedMobility standard is constructed modularly. Therefore operators c
 
 Mandatory
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
- * SwissSharedMobilityPushStation
+ * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
  * SwissSharedMobilityPushStatus
 
 Optional
