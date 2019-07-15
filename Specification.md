@@ -53,15 +53,22 @@ Describes the "station" where a vehicle can be rented.
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
 | -address | yes | Valid street number and name where station is located. |
 | -post_code | yes | Postal code where station is located. |
-| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus). The following characteristics are possible:
- * open
- * closed
- * out of service
- * unknown |
+| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus). The following characteristics are possible: open, closed, out of service, unknown |
+| - vehicle_number | yes | Amount of available vehicles. |
+
 
 
 **Attributes not used from GBFS-Standard**
  * short_name
+ * cross_street
+ * region_id
+ * rental_methods
+ * capacity
+ 
+ **Open questions:**
+ * Shall url for direct booking of vehicle be on station level or vehicle level?
+ * How can the available vehicle number be displayed for stations with more than one vehicle type?
+ 
  
  ### SwissSharedMobilityPushStatus
 Describes the "station" where a vehicle can be rented.
