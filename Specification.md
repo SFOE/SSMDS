@@ -8,7 +8,7 @@ The suggested data standard is based on the ["General Bikeshare Feed Specificati
 The SwissSharedMobility standard is constructed modularly. Therefore operators can introduce the data standard in stages. The following modules are available:
 
 Mandatory
- * SwissSharedMobilityPushSystem
+ * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
  * SwissSharedMobilityPushStation
  * SwissSharedMobilityPushStatus
 
