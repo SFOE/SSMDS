@@ -32,6 +32,11 @@ Describes the system
 | email | optional | A single contact email address for customers o address questions about the system. |
 
 **Attributes not used from GBFS-Standard**
- * 
+ * short_name
+ * purchase_url
+ * start_date
+ * phone_number
+ * timezone
+ * license_url
 
 
