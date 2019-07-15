@@ -10,7 +10,7 @@ The SwissSharedMobility standard is constructed modularly. Therefore operators c
 Mandatory
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
  * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
- * [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
+ * [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus)
 
 Optional
 * SwissSharedMobilityPushHours
@@ -53,7 +53,11 @@ Describes the "station" where a vehicle can be rented.
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
 | -address | yes | Valid street number and name where station is located. |
 | -post_code | yes | Postal code where station is located. |
-| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
+| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus). The following characteristics are possible:
+ * open
+ * closed
+ * out of service
+ * unknown |
 
 
 **Attributes not used from GBFS-Standard**
