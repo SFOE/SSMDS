@@ -7,8 +7,26 @@ The suggested data standard is based on the ["General Bikeshare Feed Specificati
 
 The SwissSharedMobility standard is constructed modularly. Therefore operators can introduce the data standard in stages. The following modules are available:
 
+Mandatory
  * SwissSharedMobilityPushSystem
  * SwissSharedMobilityPushStation
  * SwissSharedMobilityPushStatus
+
+Optional
+* SwissSharedMobilityPushHours
+* SwissSharedMobilityPushCalendar
+* SwissSharedMobilityPushRegions
+* SwissSharedMobilityPushPricing
+* SwissSharedMobilityPushAlerts
+
+### SwissSharedMobilityPushSystem
+Describes the system
+
+| Field Name  | Required | Defines|
+| ------------- | ------------- | --- |
+| system_id  | yes |  ID field - identifier for this bike share system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| name  | yes  |
+
+
 
 
