@@ -20,7 +20,7 @@ Optional
 * SwissSharedMobilityPushAlerts
 
 ### SwissSharedMobilityPushSystem
-Describes the system
+Describes the system and the metainformation of the system.
 
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
@@ -40,3 +40,10 @@ Describes the system
  * license_url
 
 
+### SwissSharedMobilityPushStation
+Describes the "station" where a vehicle can be rented.
+
+
+| Field Name  | Required | Defines|
+| ------------- | ------------- | --- |
+|
