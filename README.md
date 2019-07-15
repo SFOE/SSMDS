@@ -1,4 +1,6 @@
 # SwissSharedMobility
-Documentation for the Swiss Shared Mobility Specification.
 
-#What is the aim?
+## Aim of SwissSharedMobility
+
+## Documentation
+The documentation is found here.
