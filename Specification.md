@@ -10,7 +10,7 @@ The SwissSharedMobility standard is constructed modularly. Therefore operators c
 Mandatory
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
  * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
- * SwissSharedMobilityPushStatus
+ * [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
 
 Optional
 * SwissSharedMobilityPushHours
@@ -46,4 +46,22 @@ Describes the "station" where a vehicle can be rented.
 
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
-|
+| stations | yes | Array that contains one object per station in the system as defined below. |
+| -station_id | yes | Unique identifier of a station. |
+| -name | optional | Public name of the station. |
+| -latitude | yes | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
+| -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
+| -address | yes | Valid street number and name where station is located. |
+| -post_code | yes | Postal code where station is located. |
+| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
+
+
+**Attributes not used from GBFS-Standard**
+ * short_name
+ 
+ ### SwissSharedMobilityPushStatus
+Describes the "station" where a vehicle can be rented.
+ 
+ 
+ 
+
