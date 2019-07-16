@@ -48,15 +48,15 @@ language	        "de"
 name	                "nextbike Switzerland"
 operator	        "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German"
 url	                "https://www.nextbike.ch/xx/sursee/"
-email	               "info@nextbike.ch"
+email	                "info@nextbike.ch"
 1	
 json_featuretype 	"SwissSharedMobilityPushSystem"
 system_id	        "107"
 language	        "de"
-name	               "PubliBike"
+name	                "PubliBike"
 operator	        "PubliBike AG"
-url	               "https://www.publibike.ch/de/publibike/"
-email	              "velo@publibike-service.ch."
+url	                "https://www.publibike.ch/de/publibike/"
+email	                "velo@publibike-service.ch."
 ```
  
  
