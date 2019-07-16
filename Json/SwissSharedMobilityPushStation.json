@@ -1,0 +1,96 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "SwissSharedMobilityPushStation",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "293",
+				"name" : "Casinoplatz",
+				"latitude" : "46.9465196",
+				"longitude" : "7.4481456999999995",
+				"adress" : "Casinoplatz 3",
+				"postcode" : "3011",
+				"station_status" : "open",
+				"vehicle_number" : "13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "311",
+				"name" : "Kapellenstrasse BFF",
+				"latitude" : "46.9442197",
+				"longitude" : "7.4366739",
+				"adress" : "Kapellenstrasse 8",
+				"postcode" : "3011",
+				"station_status" : "open",
+				"vehicle_number" : "14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "486",
+				"name" : "Sanpol Bern",
+				"latitude" : "46.9503044",
+				"longitude" : "7.4145806",
+				"adress" : "Murtenstrasse 111",
+				"postcode" : "3000",
+				"station_status" : "open",
+				"vehicle_number" : "5"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "371",
+				"name" : "Elfenau",
+				"latitude" : "46.933433",
+				"longitude" : "7.466467",
+				"adress" : "Elfenauweg 92",
+				"postcode" : "3006",
+				"station_status" : "open",
+				"vehicle_number" : "16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "260",
+				"name" : "Postgasse",
+				"latitude" : "46.9486794",
+				"longitude" : "7.4532728",
+				"adress" : "Postgasse 66",
+				"postcode" : "3011",
+				"station_status" : "open",
+				"vehicle_number" : "13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "58",
+				"name" : "Gare de Sion Nord",
+				"latitude" : "46.2278",
+				"longitude" : "7.3595",
+				"adress" : "Avenue de la Gare",
+				"postcode" : "1950",
+				"station_status" : "open",
+				"vehicle_number" : "5"
+			}
+		}
+	]
+}
