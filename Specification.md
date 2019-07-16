@@ -24,11 +24,11 @@ Describes the system and the metainformation of the system.
 
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
-| system_id  | yes |  ID field - identifier for this bike share system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| system_id  | yes |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
 | language |  yes | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
 | name  | yes  |  	Full name of the system to be displayed to customers. | 
 | operator |  optional | Name of the operator of the system. |
-| url | optional | The URL of the bike share system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
+| url | optional | The URL of the sharing system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
 | email | optional | A single contact email address for customers o address questions about the system. |
 
 **Attributes not used from GBFS-Standard**
@@ -56,7 +56,8 @@ Describes the "station" where a vehicle can be rented.
 | -name | optional | Public name of the station. |
 | -latitude | yes | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
-| -address | yes | Valid street number and name where station is located. |
+| -address | yes | Valid street and street number where station is located. |
+| -place | yes | Name of the village/town where station is located. |
 | -post_code | yes | Postal code where station is located. |
 | -station_status | yes | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
 | - vehicle_number | yes | Amount of available vehicles. |
@@ -72,6 +73,12 @@ Describes the "station" where a vehicle can be rented.
  
  **Additional attributes**
  * system_id
+ * place
+ 
+  
+ **Example**
+ You will find an example [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushStation.json).
+ 
  
  **Open questions:**
  * Shall url for direct booking of vehicle be on station level or vehicle level?
