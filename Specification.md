@@ -13,11 +13,11 @@ Mandatory
  * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
 Optional
-* SwissSharedMobilityPushHours
-* SwissSharedMobilityPushCalendar
-* SwissSharedMobilityPushRegions
-* SwissSharedMobilityPushPricing
-* SwissSharedMobilityPushAlerts
+* SwissSharedMobilityPushHours (not available yet)
+* SwissSharedMobilityPushCalendar (not available yet)
+* SwissSharedMobilityPushRegions (not available yet)
+* SwissSharedMobilityPushPricing (not available yet)
+* SwissSharedMobilityPushAlerts (not available yet)
 
 ### SwissSharedMobilityPushSystem
 Describes the system and the metainformation of the system.
@@ -57,7 +57,7 @@ Describes the "station" where a vehicle can be rented.
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
 | -address | yes | Valid street number and name where station is located. |
 | -post_code | yes | Postal code where station is located. |
-| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles). The following characteristics are possible: open, closed, out of service, unknown |
+| -station_status | yes | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
 | - vehicle_number | yes | Amount of available vehicles. |
 
 
