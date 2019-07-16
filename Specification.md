@@ -44,8 +44,8 @@ Describes the system and the metainformation of the system.
 0	
 json_featuretype 	"SwissSharedMobilityPushSystem"
 system_id        	"nextbike_ch"
-language	         "de"
-name	             "nextbike Switzerland"
+language	        "de"
+name	               "nextbike Switzerland"
 operator	         "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German"
 url	              "https://www.nextbike.ch/xx/sursee/"
 email	            "info@nextbike.ch"
