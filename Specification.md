@@ -51,6 +51,7 @@ Describes the "station" where a vehicle can be rented.
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
 | stations | yes | Array that contains one object per station in the system as defined below. |
+| -system_id | yes | Identifier of the sharing system. system_id is defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 | -station_id | yes | Unique identifier of a station. |
 | -name | optional | Public name of the station. |
 | -latitude | yes | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
@@ -68,6 +69,9 @@ Describes the "station" where a vehicle can be rented.
  * region_id
  * rental_methods
  * capacity
+ 
+ **Additional attributes**
+ * system_id
  
  **Open questions:**
  * Shall url for direct booking of vehicle be on station level or vehicle level?
