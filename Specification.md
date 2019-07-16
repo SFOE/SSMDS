@@ -45,18 +45,18 @@ Describes the system and the metainformation of the system.
 json_featuretype 	"SwissSharedMobilityPushSystem"
 system_id        	"nextbike_ch"
 language	        "de"
-name	               "nextbike Switzerland"
-operator	         "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German"
-url	              "https://www.nextbike.ch/xx/sursee/"
-email	            "info@nextbike.ch"
+name	                "nextbike Switzerland"
+operator	        "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German"
+url	                "https://www.nextbike.ch/xx/sursee/"
+email	               "info@nextbike.ch"
 1	
 json_featuretype 	"SwissSharedMobilityPushSystem"
 system_id	        "107"
-language	         "de"
-name	             "PubliBike"
-operator	         "PubliBike AG"
-url	              "https://www.publibike.ch/de/publibike/"
-email	            "velo@publibike-service.ch."
+language	        "de"
+name	               "PubliBike"
+operator	        "PubliBike AG"
+url	               "https://www.publibike.ch/de/publibike/"
+email	              "velo@publibike-service.ch."
 ```
  
  
