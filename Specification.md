@@ -3,14 +3,14 @@ This document explains the SwissSharedMobility data exchange standard.
 
 ## Introduction
 The SwissSharedMobility standard is an open data standard for Shared Mobility. The data standard aims to describe real-time data for all kind of Shared Mobilities such as bike sharing, car sharing or scooter sharing.
-The suggested data standard is based on the ["General Bikeshare Feed Specification"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshar Association".
+The suggested data standard is based on the ["General Bikeshare Feed Specification"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshare Association".
 
 The SwissSharedMobility standard is constructed modularly. Therefore operators can introduce the data standard in stages. The following modules are available:
 
 Mandatory
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
  * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
- * [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus)
+ * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
 Optional
 * SwissSharedMobilityPushHours
@@ -53,7 +53,7 @@ Describes the "station" where a vehicle can be rented.
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
 | -address | yes | Valid street number and name where station is located. |
 | -post_code | yes | Postal code where station is located. |
-| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushStatus](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstatus). The following characteristics are possible: open, closed, out of service, unknown |
+| -station_status | yes | Indicates the status of the station. station_status will be derived from [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles). The following characteristics are possible: open, closed, out of service, unknown |
 | - vehicle_number | yes | Amount of available vehicles. |
 
 
@@ -70,9 +70,8 @@ Describes the "station" where a vehicle can be rented.
  * How can the available vehicle number be displayed for stations with more than one vehicle type?
  
  
- ### SwissSharedMobilityPushStatus
-Describes the "status" of a station.
- 
+ ### SwissSharedMobilityPushVehicles
+Describes the vehicles that can be rented.
  
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
