@@ -6,43 +6,88 @@
 			"type" : "Feature",
 			"geometry" : null,
 			"properties" : {
-				"system_id" : "PubliBike",
-				"station_id" : "293",
-				"name" : "Casinoplatz",
-				"latitude" : "46.9465196",
-				"longitude" : "7.4481456999999995",
-				"adress" : "Casinoplatz 3",
-				"postcode" : "3011",
-				"station_status" : "open",
-				"vehicle_number" : "13"
+				"system_id" : "SMIDE",
+				"station_id" : "46",
+				"name" : "BE346633",
+				"latitude" : "46.960044",
+				"longitude" : "7.458879",
+				"adress" : "Schärerstrasse 23",
+				"place" : "Bern",
+				"postcode" : "3014",
+				"station_status" : "open"
 			}
 		},
 		{
 			"type" : "Feature",
 			"geometry" : null,
 			"properties" : {
-				"system_id" : "PubliBike",
-				"station_id" : "311",
-				"name" : "Kapellenstrasse BFF",
-				"latitude" : "46.9442197",
-				"longitude" : "7.4366739",
-				"adress" : "Kapellenstrasse 8",
-				"postcode" : "3011",
-				"station_status" : "open",
-				"vehicle_number" : "14"
+				"system_id" : "SMIDE",
+				"station_id" : "85",
+				"name" : "ZH253729",
+				"latitude" : "47.365828",
+				"longitude" : "8.507493",
+				"adress" : "Wasserschöpfi 23",
+				"place" : "Zürich",
+				"postcode" : "8055",
+				"station_status" : "open"
 			}
 		},
 		{
 			"type" : "Feature",
 			"geometry" : null,
 			"properties" : {
-				"system_id" : "PubliBike",
-				"station_id" : "486",
-				"name" : "Sanpol Bern",
-				"latitude" : "46.9503044",
-				"longitude" : "7.4145806",
-				"adress" : "Murtenstrasse 111",
-				"postcode" : "3000",
+				"system_id" : "Carvelo2Go",
+				"station_id" : "f148aa4c-2ae4-43d6-8483-debf32e0cc84",
+				"name" : "Accademia di Architettura",
+				"latitude" : "45.867379",
+				"longitude" : "8.984816",
+				"adress" : "Largo Bernasconi 2",
+				"place" : "Mendrisio",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Carvelo2Go",
+				"station_id" : "1f20dbbd-a186-4ae4-ae0b-0236e4770a0f",
+				"name" : "Agentur UMSICHT",
+				"latitude" : "47.049012",
+				"longitude" : "8.300202",
+				"adress" : "Klosterstrasse 21a",
+				"place" : "Luzern",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "34398",
+				"name" : "Habsburgerstrasse 26",
+				"latitude" : "47.046696332716",
+				"longitude" : "8.3066940307617",
+				"adress" : "Habsburgerstrasse 33",
+				"place" : "Luzern",
+				"postcode" : "6003",
+				"station_status" : "open",
+				"vehicle_number" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "38588",
+				"name" : "Seehofstr. / Matthäuskirche",
+				"latitude" : "47.054360999731",
+				"longitude" : "8.3090114593506",
+				"adress" : "Schweizerhofquai null",
+				"place" : "Luzern",
+				"postcode" : "6004",
 				"station_status" : "open",
 				"vehicle_number" : "5"
 			}
@@ -52,14 +97,14 @@
 			"geometry" : null,
 			"properties" : {
 				"system_id" : "PubliBike",
-				"station_id" : "371",
-				"name" : "Elfenau",
-				"latitude" : "46.933433",
-				"longitude" : "7.466467",
-				"adress" : "Elfenauweg 92",
-				"postcode" : "3006",
+				"station_id" : "490",
+				"name" : "Prilly-Centre",
+				"latitude" : "46.534129",
+				"longitude" : "6.606292",
+				"adress" : "Route de Cossonay 28",
+				"postcode" : "1008",
 				"station_status" : "open",
-				"vehicle_number" : "16"
+				"vehicle_number" : "7"
 			}
 		},
 		{
@@ -67,29 +112,14 @@
 			"geometry" : null,
 			"properties" : {
 				"system_id" : "PubliBike",
-				"station_id" : "260",
-				"name" : "Postgasse",
-				"latitude" : "46.9486794",
-				"longitude" : "7.4532728",
-				"adress" : "Postgasse 66",
-				"postcode" : "3011",
+				"station_id" : "105",
+				"name" : "Sihlpost",
+				"latitude" : "47.3775022",
+				"longitude" : "8.5360685",
+				"adress" : "Kasernenstrasse 101",
+				"postcode" : "8004",
 				"station_status" : "open",
-				"vehicle_number" : "13"
-			}
-		},
-		{
-			"type" : "Feature",
-			"geometry" : null,
-			"properties" : {
-				"system_id" : "PubliBike",
-				"station_id" : "58",
-				"name" : "Gare de Sion Nord",
-				"latitude" : "46.2278",
-				"longitude" : "7.3595",
-				"adress" : "Avenue de la Gare",
-				"postcode" : "1950",
-				"station_status" : "open",
-				"vehicle_number" : "5"
+				"vehicle_number" : "23"
 			}
 		}
 	]
