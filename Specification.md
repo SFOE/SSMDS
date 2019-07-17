@@ -18,6 +18,7 @@ Optional
 * SwissSharedMobilityPushRegions (not available yet)
 * SwissSharedMobilityPushPricing (not available yet)
 * SwissSharedMobilityPushAlerts (not available yet)
+* to be extended
 
 ### SwissSharedMobilityPushSystem
 Describes the system and the metainformation of the system.
@@ -90,7 +91,12 @@ Describes the vehicles that can be rented.
  
 | Field Name  | Required | Defines|
 | ------------- | ------------- | --- |
+| station_id | yes | Identifier of the station where the vehicle is situated. station_id is defined in [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation).
 | vehicle_id | yes | Unique vehicle id. Is defined by the provider|
 | vehicle_status | yes | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
 | vehicle_type | yes | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | charging_status | optional | e-vehicles have to indicate the charging status of the battery. |
+
+
+**Open questions:**
+* FreeFloat-Vehicles change coordinates with every change whereas stations have fix coordinates. station-bases vehicles do not need coordinates whereas freefloat vehicles need coordinates to be defined on "PushVehicles"
