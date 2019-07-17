@@ -106,4 +106,4 @@ Describes the vehicles that can be rented.
 **Open questions:**
 * FreeFloat-Vehicles change coordinates with every change whereas stations have fix coordinates. station-bases vehicles do not need coordinates whereas freefloat vehicles need coordinates to be defined on "PushVehicles"
 * Nextbike does not have information for every single vehicle. A vehicle_id can be derived from the station_id by artifically adding a number at the end:
-station_id: 345 --> vehicle_ids: 345-1, 345-2, 345-3...
+station_id: 345 --> vehicle_ids: 345-1, 345-2, 345-3... This will cause the problem that vehicles will change the vehicle_id
