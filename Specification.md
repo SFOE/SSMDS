@@ -103,6 +103,11 @@ Describes the vehicles that can be rented.
 | charging_status | optional | e-vehicles have to indicate the charging status of the battery. |
 
 
+ **Example**
+ You will find an example [here](
+https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushVehicles.json).
+
+
 **Open questions:**
 * FreeFloat-Vehicles change coordinates with every change whereas stations have fix coordinates. station-bases vehicles do not need coordinates whereas freefloat vehicles need coordinates to be defined on "PushVehicles"
 * Nextbike does not have information for every single vehicle. A vehicle_id can be derived from the station_id by artifically adding a number at the end:
