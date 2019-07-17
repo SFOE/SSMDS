@@ -20,6 +20,8 @@ Optional
 * SwissSharedMobilityPushAlerts (not available yet)
 * to be extended
 
+![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
+
 ### SwissSharedMobilityPushSystem
 Describes the system and the metainformation of the system.
 
