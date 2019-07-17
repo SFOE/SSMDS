@@ -63,7 +63,7 @@ Describes the "station" where a vehicle can be rented.
 | -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
 | -address | yes | Valid street and street number where station is located. |
 | -place | yes | Name of the village/town where station is located. |
-| -post_code | yes | Postal code where station is located. |
+| -postcode | yes | Postal code where station is located. |
 | -station_status | yes | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
 | - vehicle_number | yes | Amount of available vehicles. |
 
