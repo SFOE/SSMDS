@@ -72,7 +72,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | ------------- | ------------- | ------------- | --- |
 | actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
 | fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
-| stations | station | M | Array that contains one object per station. See below for definition of data type station. |
+| stations | [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station) | M | Array that contains one object per station. See below for definition of data type station. |
 
  
 **Example in JSON**
@@ -107,7 +107,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | ------------- | ------------- | ------------- | --- |
 | actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
 | fk_station_id | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
-| vehicles | [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md) | M | Array that contains one object per station. See below for definition of data type station. |
+| vehicles | [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle) | M | Array that contains one object per station. See below for definition of data type station. |
 
 
 **Example in JSON**
