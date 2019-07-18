@@ -29,7 +29,7 @@ A **station** is a place described by coordinates where vehicles are positioned.
 A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
 
-![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
+![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/swisssharedmobility_overview.png)
 
 To address the data exchange based on the defined entities, the following services are established:
 
