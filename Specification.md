@@ -15,11 +15,11 @@ A **vehicle** is a shared mobility asset such as a bike. When its not used it be
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
 
-To address to data exchange based on the defined entities, the following services are established:
+To address the data exchange based on the defined entities, the following services are established:
 
 Mandatory:
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
- * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
+ * [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
  * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
 Optional:
@@ -38,23 +38,15 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
-| actionType | One of: fullLoad, update, insert, delete | M | Describes the action that has to be performed with the provided data. |
-| system_id  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
+| system_id  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
 | language | String | M | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
 | name  | String | M  |  	Full name of the system to be displayed to customers. | 
 | operator | String | O | Name of the operator of the system. |
 | url | URI | O | The URL of the sharing system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
-| email | String | O | A single contact email address for customers o address questions about the system. |
+| email | String | O | A single contact email address for customers to address questions about the system. |
 
-**Attributes not used from GBFS-Standard**
- * short_name
- * purchase_url
- * start_date
- * phone_number
- * timezone
- * license_url
- 
- **Example**
+ **Example in JSON**
  
  ```json
 {
@@ -68,28 +60,33 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 }
 ```
   
- You will find an example [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushSystem.json).
+ You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushSystem.json).
  
 
  
-### SwissSharedMobilityPushStation
-Describes the "station" where a vehicle can be rented.
+### SwissSharedMobilityPushStations
 
+SwissSharedMobilityPushStations is a message that is sent in order to upload data about the stations.
 
-| Field Name  | Required | Defines|
-| ------------- | ------------- | --- |
-| stations | yes | Array that contains one object per station in the system as defined below. |
-| -system_id | yes | Identifier of the sharing system. system_id is defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
-| -station_id | yes | Unique identifier of a station. |
-| -name | optional | Public name of the station. |
-| -latitude | yes | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
-| -longitude | yes | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
-| -address | yes | Valid street and street number where station is located. |
-| -place | yes | Name of the village/town where station is located. |
-| -postcode | yes | Postal code where station is located. |
-| -station_status | yes | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
-| - vehicle_number | yes | Amount of available vehicles. |
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
+| stations | station | M | Array that contains one object per station. See below for definition of data type station. |
+| fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 
+Data type station:
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| station_id | String | M | Unique identifier of a station. |
+| name | String | O | Public name of the station. |
+| latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
+| longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
+| address | String | M | Valid street and street number where station is located. |
+| place | String | M | Name of the village/town where station is located. |
+| postcode | Integer | M | Postal code where station is located. |
+| station_status | One of: | M | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
+| vehicle_number | Integer | M | Amount of available vehicles. |
 
 
 **Attributes not used from GBFS-Standard**
