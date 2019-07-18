@@ -61,9 +61,9 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 ```
   
  You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushSystem.json).
+  
  
-
- 
+  
 ### SwissSharedMobilityPushStations
 
 SwissSharedMobilityPushStations is a message that is sent in order to upload data about the stations.
@@ -71,64 +71,75 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
-| stations | station | M | Array that contains one object per station. See below for definition of data type station. |
 | fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
+| stations | station | M | Array that contains one object per station. See below for definition of data type station. |
 
-Data type station:
+Data type "station":
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | station_id | String | M | Unique identifier of a station. |
 | name | String | O | Public name of the station. |
-| latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. |
-| longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. |
+| latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
+| longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For exmpale: 7.44426 |
 | address | String | M | Valid street and street number where station is located. |
 | place | String | M | Name of the village/town where station is located. |
 | postcode | Integer | M | Postal code where station is located. |
 | station_status | One of: | M | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
 | vehicle_number | Integer | M | Amount of available vehicles. |
 
-
-**Attributes not used from GBFS-Standard**
- * short_name
- * cross_street
- * region_id
- * rental_methods
- * capacity
- 
- **Additional attributes**
- * system_id
- * place
- 
   
- **Example**
- You will find an example [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushStation.json).
+**Example in JSON**
+  
+ ```json
+{
+	"actionType" : "fullLoad",
+	"fk_system_id" : "nextbike_ch",
+	"stations" : {
+		"station_id" : "46",
+		"name" : "BE346633",
+		"latitude" : "46.960044",
+		"longitude" : "7.458879",
+		"adress" : "Schärerstrasse 23",
+		"place" : "Bern",
+		"postcode" : "3014",
+		"station_status" : "open"
+	}
+}
+```
  
+ You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushStation.json).
  
- **Open questions:**
- * Shall url for direct booking of vehicle be on station level or vehicle level?
- * How can the available vehicle number be displayed for stations with more than one vehicle type?
- * Do the attributes "address", "place" and "post_code" need to be mandatory? There is no such information for Nextbike vehicles. Information can be derived using swisstopo-API.
+
  
  
  ### SwissSharedMobilityPushVehicles
-Describes the vehicles that can be rented.
  
-| Field Name  | Required | Defines|
-| ------------- | ------------- | --- |
-| station_id | yes | Identifier of the station where the vehicle is situated. station_id is defined in [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation).
-| vehicle_id | yes | Unique vehicle id. Is defined by the provider|
-| vehicle_status | yes | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
-| vehicle_type | yes | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
-| charging_status | optional | e-vehicles have to indicate the charging status of the battery. |
+ SwissSharedMobilityPushVehicles is a message that is sent in order to upload data about the vehicles.
+ 
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| station_id | String | M | Identifier of the station where the vehicle is situated. station_id is defined in [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation).
+| vehicle_id | String | M | Unique vehicle id. Is defined by the provider|
+| vehicle_status | String | M | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
+| vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
+| charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
 
 
- **Example**
+**Example in JSON**
+ 
+  ```json
+{
+	"station_id" : "395",
+	"vehicle_id" : "615",
+	"vehicle_type" : "Bike",
+	"charging_status" : ""
+}
+```
+ 
  You will find an example [here](
 https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushVehicles.json).
 
 
-**Open questions:**
-* FreeFloat-Vehicles change coordinates with every change whereas stations have fix coordinates. station-bases vehicles do not need coordinates whereas freefloat vehicles need coordinates to be defined on "PushVehicles"
-* Nextbike does not have information for every single vehicle. A vehicle_id can be derived from the station_id by artifically adding a number at the end:
-station_id: 345 --> vehicle_ids: 345-1, 345-2, 345-3... This will cause the problem that vehicles will change the vehicle_id
+## Open questions
