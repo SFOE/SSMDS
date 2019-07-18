@@ -2,9 +2,12 @@
 This document explains the SwissSharedMobility data exchange standard.
 
 ## Introduction
-The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It is constructed modularly. Therefore operators can introduce the data standard in stages. The SwissSharedMobility standard is based on the ["General Bikeshare Feed Specification (GBFS)"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshare Association".
+The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It consits of different services. Therefore operators can introduce the data standard in stages. The SwissSharedMobility standard is based on the ["General Bikeshare Feed Specification (GBFS)"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshare Association".
 
-The following modules are available:
+## Overview
+![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
+
+The following services are available:
 
 Mandatory
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
@@ -19,9 +22,7 @@ Optional
 * SwissSharedMobilityPushAlerts (not available yet)
 * to be extended
 
-
-## Overview
-![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
+## Services
 
 ### SwissSharedMobilityPushSystem
 Describes the system and the metainformation of the system.
