@@ -1,6 +1,18 @@
 # Specification
 This document explains the SwissSharedMobility data exchange standard.
 
+* [Introduction](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#introduction)
+* [Overview](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#overview)
+* [Services](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#services)
+	* [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
+	* [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushStations)
+	* [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushVehicles)
+* [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#datatypes)
+	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
+	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
+* [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#openquestions)
+
+
 ## Introduction
 The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It consists of different individual services. Therefore operators can introduce the data exchange standard in stages. The SwissSharedMobility standard is based on the ["General Bikeshare Feed Specification (GBFS)"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshare Association".
 
