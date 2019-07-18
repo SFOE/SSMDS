@@ -58,16 +58,13 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
  
  ```json
 {
-	"actionType": "fullLoad",
-	"system_id": "SMIDE",
-	"station_id": "46",
-	"name": "BE346633",
-	"latitude": "46.960044",
-	"longitude": "7.458879",
-	"adress": "Schärerstrasse 23",
-	"place": "Bern",
-	"postcode": "3014",
-	"station_status": "open"
+		"actionType" : "fullLoad",
+		"system_id" : "nextbike_ch",
+		"language" : "de",
+		"name" : "nextbike Switzerland",
+		"operator" : "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German",
+		"url" : "https://www.nextbike.ch/xx/sursee/",
+		"email" : "info@nextbike.ch"
 }
 ```
   
