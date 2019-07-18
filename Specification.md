@@ -5,7 +5,11 @@ This document explains the SwissSharedMobility data exchange standard.
 The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It consists of different individual services. Therefore operators can introduce the data exchange standard in stages. The SwissSharedMobility standard is based on the ["General Bikeshare Feed Specification (GBFS)"](https://github.com/NABSA/gbfs/blob/master/README.md) which was designed by the "North American Bikeshare Association".
 
 ## Overview
+
+A sharing system operator is identified by a unique system_id. The operator owns stations and vehicles. Every station and vehicle belongs to a certain system.
+
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
+
 
 The following services are available:
 
@@ -45,6 +49,21 @@ Describes the system and the metainformation of the system.
  * license_url
  
  **Example**
+ 
+ ```json
+{
+	"system_id": "SMIDE",
+	"station_id": "46",
+	"name": "BE346633",
+	"latitude": "46.960044",
+	"longitude": "7.458879",
+	"adress": "Schärerstrasse 23",
+	"place": "Bern",
+	"postcode": "3014",
+	"station_status": "open"
+}
+```
+  
  You will find an example [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushSystem.json).
  
 
