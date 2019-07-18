@@ -10,7 +10,7 @@ A sharing **system** operator is identified by a unique system_id and described 
 
 A **station** is a place described by coordinates where vehicles are positioned. Every station belongs to a sharing system.
 
-A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a sharing system.
+A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
@@ -35,14 +35,15 @@ Optional:
 ### SwissSharedMobilityPushSystem
 Describes the system and the metainformation of the system.
 
-| Field Name  | Required | Defines|
-| ------------- | ------------- | --- |
-| system_id  | yes |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
-| language |  yes | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
-| name  | yes  |  	Full name of the system to be displayed to customers. | 
-| operator |  optional | Name of the operator of the system. |
-| url | optional | The URL of the sharing system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
-| email | optional | A single contact email address for customers o address questions about the system. |
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- |--- |
+| actionType | One of: fullLoad, update, insert, delete | M | Describes the action that has to be performed with the provided data. |
+| system_id  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the publisher of the feed to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| language | String | M | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
+| name  | String | M  |  	Full name of the system to be displayed to customers. | 
+| operator | String | O | Name of the operator of the system. |
+| url | URI | O | The URL of the sharing system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
+| email | String | O | A single contact email address for customers o address questions about the system. |
 
 **Attributes not used from GBFS-Standard**
  * short_name
@@ -56,6 +57,7 @@ Describes the system and the metainformation of the system.
  
  ```json
 {
+	"actionType": "fullLoad",
 	"system_id": "SMIDE",
 	"station_id": "46",
 	"name": "BE346633",
