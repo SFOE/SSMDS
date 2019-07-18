@@ -7,6 +7,8 @@ This document explains the SwissSharedMobility data exchange standard.
 	* [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
 	* [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushStations)
 	* [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushVehicles)
+* [Messages](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#messaged)
+	* [SwissSharedMobilityAcknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#SwissSharedMobilityAcknowledgement)
 * [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#datatypes)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
@@ -141,6 +143,14 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  
  You will find an example [here](
 https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushVehicles.json).
+
+## Messages
+
+### SwissSharedMobilityAcknowledgement
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| result | Boolean | M | True if the message was received and processed successfully. False if not. |
 
 ## Data types
 
