@@ -6,19 +6,23 @@ The SwissSharedMobility standard is a data exchange standard for shared mobility
 
 ## Overview
 
-A sharing system operator is identified by a unique system_id. The operator owns stations and vehicles. Every station and vehicle belongs to a certain system.
+A sharing **system** operator is identified by a unique system_id and described by at least a name and a language.
+
+A **station** is a place described by coordinates where vehicles are positioned. Every station belongs to a sharing system.
+
+A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a sharing system.
+
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SwissSharedMobility_overview.png)
 
+To address to data exchange based on the defined entities, the following services are established:
 
-The following services are available:
-
-Mandatory
+Mandatory:
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
  * [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
  * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
-Optional
+Optional:
 * SwissSharedMobilityPushHours (not available yet)
 * SwissSharedMobilityPushCalendar (not available yet)
 * SwissSharedMobilityPushRegions (not available yet)
