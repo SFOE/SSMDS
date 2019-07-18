@@ -6,7 +6,7 @@ The SwissSharedMobility standard is a data exchange standard for shared mobility
 
 ## Overview
 
-A sharing **system** operator is identified by a unique system_id and described by at least a name and a language.
+A sharing **system** is identified by a unique system_id and described with information about the operator.
 
 A **station** is a place described by coordinates where vehicles are positioned. Every station belongs to a sharing system.
 
@@ -33,7 +33,8 @@ Optional:
 ## Services
 
 ### SwissSharedMobilityPushSystem
-Describes the system and the metainformation of the system.
+
+SwissSharedMobilityPushSystem is a message that is sent in order to upload system data.
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
