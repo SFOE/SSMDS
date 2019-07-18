@@ -1,0 +1,806 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "SwissSharedMobilityPushVehicles",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "395",
+				"vehicle_id" : "615",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "395",
+				"vehicle_id" : "2406",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "395",
+				"vehicle_id" : "559",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "395",
+				"vehicle_id" : "814",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "395",
+				"vehicle_id" : "3950",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "3945",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "2425",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "3690",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "2430",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "3827",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "527",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "514",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "506",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "2903",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "2835",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "106",
+				"vehicle_id" : "2836",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "80",
+				"vehicle_id" : "ZH253777",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "91"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "39",
+				"vehicle_id" : "BE346626",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "159",
+				"vehicle_id" : "ZH253791",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "192",
+				"vehicle_id" : "ZH253706",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "80"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "18",
+				"vehicle_id" : "ZH253859",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "100"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "38",
+				"vehicle_id" : "ZH253851",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "122",
+				"vehicle_id" : "ZH253850",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "83"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "163",
+				"vehicle_id" : "ZH256147",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "61"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "95",
+				"vehicle_id" : "BE346630",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "162",
+				"vehicle_id" : "BE346628",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "61"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "175",
+				"vehicle_id" : "ZH253730",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "54",
+				"vehicle_id" : "ZH253874",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "58",
+				"vehicle_id" : "ZH259246",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "72"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "13",
+				"vehicle_id" : "ZH253835",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "131",
+				"vehicle_id" : "ZH253767",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "99"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "96",
+				"vehicle_id" : "ZH256146",
+				"vehicle_type" : "E-Bike",
+				"charging_status" : "87"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286233",
+				"vehicle_id" : "286233-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286234",
+				"vehicle_id" : "286234-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286235",
+				"vehicle_id" : "286235-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286236",
+				"vehicle_id" : "286236-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286239",
+				"vehicle_id" : "286239-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "286240",
+				"vehicle_id" : "286240-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "348292",
+				"vehicle_id" : "348292-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "348294",
+				"vehicle_id" : "348294-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "348305",
+				"vehicle_id" : "348305-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "355154",
+				"vehicle_id" : "355154-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "3025174",
+				"vehicle_id" : "3025174-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "6201611",
+				"vehicle_id" : "6201611-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "16871",
+				"vehicle_id" : "16871-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "19515",
+				"vehicle_id" : "19515-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "23220",
+				"vehicle_id" : "23220-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "24871",
+				"vehicle_id" : "24871-4",
+				"vehicle_type" : "Bike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "f148aa4c-2ae4-43d6-8483-debf32e0cc84",
+				"vehicle_id" : "5d2d1751-7780-4e51-ff4c-40f748532365",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "f148aa4c-2ae4-43d6-8483-debf32e0cc84",
+				"vehicle_id" : "90eff4a4-7509-43d1-bf26-e4a1df2dc736",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "1f20dbbd-a186-4ae4-ae0b-0236e4770a0f",
+				"vehicle_id" : "4b6930cd-70cb-44e4-c800-df46423385a5",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "5421ef2f-d0be-42b9-db4b-bbc5fe78e8a5",
+				"vehicle_id" : "f7cf998d-e9f2-47a5-a596-5cba80cbb708",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "b32ca1fa-8d7c-42e0-8dfc-11235c4a326a",
+				"vehicle_id" : "c27e3140-80c4-4c0d-c02d-568cbe8912c4",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "9a8bfea2-71b6-4dfe-fbce-b68566ea3a05",
+				"vehicle_id" : "c0db1abb-63d3-4e1b-811a-f90c99431ecf",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "9dc1524e-73a2-4d3a-cb2a-4dcdc06cd5c3",
+				"vehicle_id" : "f8a3951e-fcd2-4bfa-8307-c1f637db8ebc",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "d9483787-11ce-4b82-819b-62a36a38a0f1",
+				"vehicle_id" : "a22f8bfe-b13d-4adc-d0bf-7be34039d4cb",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "e25779fb-7a4e-4072-c5fd-afa26a303c72",
+				"vehicle_id" : "f7ad3950-3248-43a2-ce41-e241846f6b0b",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "e2cf5d2c-3b58-4ff6-f29d-ff5ed92cdc1f",
+				"vehicle_id" : "2cb3af67-439b-4dc3-f8a4-67b68e8f9344",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "30307cf6-df4e-40bf-fae1-c39938cfe60c",
+				"vehicle_id" : "8a88b317-ff1d-46e2-f257-85ff913aa40c",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "08c41836-c5cc-440f-8072-28ac4e00af67",
+				"vehicle_id" : "0d262ccf-10c6-4404-b2bd-d4db3eb78749",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "ba541b2f-c836-4b67-866e-c7bac8135d4f",
+				"vehicle_id" : "cb72e489-82a0-4dc4-961c-2155b3e7e7d1",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "52c39c1d-e886-43f7-dbe2-40efe7648c9e",
+				"vehicle_id" : "b1b5edb8-089c-473d-8229-96170511b8da",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "43a33698-13f7-418f-bc51-08de03dac894",
+				"vehicle_id" : "20f169a8-a54d-410b-f8f4-0ac76c27ef7b",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "dd4d2941-cf0f-4dd4-8efd-fbcd8ada43a5",
+				"vehicle_id" : "1f0f2599-a082-43a7-dba3-47491f5d9061",
+				"vehicle_type" : "CargoBike",
+				"charging_status" : ""
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35445",
+				"vehicle_id" : "35445",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "40%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "36028",
+				"vehicle_id" : "36028",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "86%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34654",
+				"vehicle_id" : "34654",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "44%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35609",
+				"vehicle_id" : "35609",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "97%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34792",
+				"vehicle_id" : "34792",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "22%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34256",
+				"vehicle_id" : "34256",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "39%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34799",
+				"vehicle_id" : "34799",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "33%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "36008",
+				"vehicle_id" : "36008",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "55%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35655",
+				"vehicle_id" : "35655",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "97%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34985",
+				"vehicle_id" : "34985",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "84%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35450",
+				"vehicle_id" : "35450",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "42%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35421",
+				"vehicle_id" : "35421",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "91%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35700",
+				"vehicle_id" : "35700",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "66%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "34816",
+				"vehicle_id" : "34816",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "22%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35657",
+				"vehicle_id" : "35657",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "76%"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"station_id" : "35639",
+				"vehicle_id" : "35639",
+				"vehicle_type" : "Scooter",
+				"charging_status" : "54%"
+			}
+		}
+	]
+}

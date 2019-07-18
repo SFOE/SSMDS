@@ -1,0 +1,310 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "SwissSharedMobilityPushStation",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "SMIDE",
+				"station_id" : "80",
+				"name" : "ZH253777",
+				"latitude" : "47.350944",
+				"longitude" : "8.58274",
+				"adress" : "Forchstrasse 403",
+				"place" : "Zürich",
+				"postcode" : "8008",
+				"station_status" : "open"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "SMIDE",
+				"station_id" : "39",
+				"name" : "BE346626",
+				"latitude" : "46.943668",
+				"longitude" : "7.44943",
+				"adress" : "Helvetiaplatz",
+				"place" : "Bern",
+				"postcode" : "3005",
+				"station_status" : "open"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "SMIDE",
+				"station_id" : "159",
+				"name" : "ZH253791",
+				"latitude" : "47.4135",
+				"longitude" : "8.55099",
+				"adress" : "Thurgauerstrasse 30",
+				"place" : "Zürich",
+				"postcode" : "8050",
+				"station_status" : "open"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "SMIDE",
+				"station_id" : "192",
+				"name" : "ZH253706",
+				"latitude" : "47.38396",
+				"longitude" : "8.497125",
+				"adress" : "Flüelastrasse 7",
+				"place" : "Zürich",
+				"postcode" : "8048",
+				"station_status" : "open"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Flash",
+				"station_id" : "348706",
+				"name" : "unknown",
+				"latitude" : "47.359712",
+				"longitude" : "8.550375",
+				"adress" : "Alte Feldeggstrasse 14",
+				"place" : "Zurich",
+				"station_status" : "open",
+				"vehicle_number" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Flash",
+				"station_id" : "632632",
+				"name" : "unknown",
+				"latitude" : "47.360553",
+				"longitude" : "8.550022",
+				"adress" : "Mainaustrasse 23",
+				"place" : "Zurich",
+				"station_status" : "open",
+				"vehicle_number" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Flash",
+				"station_id" : "242007",
+				"name" : "unknown",
+				"latitude" : "47.360685",
+				"longitude" : "8.551245",
+				"adress" : "Magnolienstrasse 3",
+				"place" : "Zürich",
+				"station_status" : "open",
+				"vehicle_number" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Flash",
+				"station_id" : "608388",
+				"name" : "unknown",
+				"latitude" : "47.360343",
+				"longitude" : "8.55229",
+				"adress" : "Seefeldstrasse 88",
+				"place" : "Zurich",
+				"station_status" : "open",
+				"vehicle_number" : "1"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Carvelo2Go",
+				"station_id" : "f148aa4c-2ae4-43d6-8483-debf32e0cc84",
+				"name" : "Accademia di Architettura",
+				"latitude" : "45.867379",
+				"longitude" : "8.984816",
+				"adress" : "Largo Bernasconi 2",
+				"place" : "Mendrisio",
+				"postcode" : "6850",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Carvelo2Go",
+				"station_id" : "1f20dbbd-a186-4ae4-ae0b-0236e4770a0f",
+				"name" : "Agentur UMSICHT",
+				"latitude" : "47.049012",
+				"longitude" : "8.300202",
+				"adress" : "Klosterstrasse 21a",
+				"place" : "Luzern",
+				"postcode" : "6003",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Carvelo2Go",
+				"station_id" : "5421ef2f-d0be-42b9-db4b-bbc5fe78e8a5",
+				"name" : "Aicha's",
+				"latitude" : "47.390363",
+				"longitude" : "8.172452",
+				"adress" : "Bahnhofstrasse 38",
+				"place" : "Lenzburg",
+				"postcode" : "5600",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "Carvelo2Go",
+				"station_id" : "b32ca1fa-8d7c-42e0-8dfc-11235c4a326a",
+				"name" : "Amt für Umweltschutz",
+				"latitude" : "46.963489",
+				"longitude" : "7.4618649999999995",
+				"adress" : "Morgartenstrasse 2a",
+				"place" : "Bern",
+				"postcode" : "3014",
+				"station_status" : "unknown"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "34398",
+				"name" : "Habsburgerstrasse 26",
+				"latitude" : "47.046696332716",
+				"longitude" : "8.3066940307617",
+				"adress" : "Habsburgerstrasse 33",
+				"place" : "Luzern",
+				"postcode" : "6003",
+				"station_status" : "open",
+				"vehicle_number" : "5"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "38588",
+				"name" : "Seehofstr. / Matthäuskirche",
+				"latitude" : "47.054360999731",
+				"longitude" : "8.3090114593506",
+				"adress" : "Schweizerhofquai null",
+				"place" : "Luzern",
+				"postcode" : "6004",
+				"station_status" : "open",
+				"vehicle_number" : "5"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "57172",
+				"name" : "Weinberglistr. 4",
+				"latitude" : "47.0418001",
+				"longitude" : "8.3166403",
+				"adress" : "Tribschenstrasse 62a",
+				"place" : "Luzern",
+				"postcode" : "6005",
+				"station_status" : "open",
+				"vehicle_number" : "2"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "nextbike_ch",
+				"station_id" : "57172",
+				"name" : "Weinberglistr. 4",
+				"latitude" : "47.0418001",
+				"longitude" : "8.3166403",
+				"adress" : "Tribschenstrasse 62b",
+				"place" : "Luzern",
+				"postcode" : "6005",
+				"station_status" : "open",
+				"vehicle_number" : "2"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "57",
+				"name" : "Gare de Sion Sud",
+				"latitude" : "46.226775",
+				"longitude" : "7.358569",
+				"adress" : "Rue des Entrepôts",
+				"postcode" : "1950",
+				"station_status" : "open",
+				"vehicle_number" : "4"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "362",
+				"name" : "Stauffachertor",
+				"latitude" : "47.37271",
+				"longitude" : "8.530437",
+				"adress" : "Werdstrasse 25",
+				"postcode" : "8004",
+				"station_status" : "open",
+				"vehicle_number" : "6"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "217",
+				"name" : "Bahnhofplatz",
+				"latitude" : "46.9483305",
+				"longitude" : "7.4406382",
+				"adress" : "Spitalgasse 44",
+				"postcode" : "3011",
+				"station_status" : "open",
+				"vehicle_number" : "37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : null,
+			"properties" : {
+				"system_id" : "PubliBike",
+				"station_id" : "447",
+				"name" : "Gutstrasse",
+				"latitude" : "47.371455",
+				"longitude" : "8.5070564",
+				"adress" : "Gutstrasse 87",
+				"postcode" : "8055",
+				"station_status" : "open",
+				"vehicle_number" : "11"
+			}
+		}
+	]
+}
