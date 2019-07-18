@@ -74,21 +74,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 | stations | station | M | Array that contains one object per station. See below for definition of data type station. |
 
-Data type "station":
-
-| Name  | Data Type | M/O | Description |
-| ------------- | ------------- | ------------- | --- |
-| station_id | String | M | Unique identifier of a station. |
-| name | String | O | Public name of the station. |
-| latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
-| longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For exmpale: 7.44426 |
-| address | String | M | Valid street and street number where station is located. |
-| place | String | M | Name of the village/town where station is located. |
-| postcode | Integer | M | Postal code where station is located. |
-| station_status | One of: | M | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
-| vehicle_number | Integer | M | Amount of available vehicles. |
-
-  
+ 
 **Example in JSON**
   
  ```json
@@ -117,29 +103,55 @@ Data type "station":
  
  SwissSharedMobilityPushVehicles is a message that is sent in order to upload data about the vehicles.
  
-
-| Name  | Data Type | M/O | Description |
+ | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
-| station_id | String | M | Identifier of the station where the vehicle is situated. station_id is defined in [SwissSharedMobilityPushStation](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation).
-| vehicle_id | String | M | Unique vehicle id. Is defined by the provider|
-| vehicle_status | String | M | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
-| vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
-| charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
+| actionType | One of: fullLoad, update, insert, delete | M | The action that has to be performed with the provided data. |
+| fk_station_id | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
+| vehicles | [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md) | M | Array that contains one object per station. See below for definition of data type station. |
 
 
 **Example in JSON**
  
   ```json
 {
-	"station_id" : "395",
-	"vehicle_id" : "615",
-	"vehicle_type" : "Bike",
-	"charging_status" : ""
+	"actionType" : "fullLoad",
+	"fk_station_id" : "nextbike_ch",
+	"vehicles" : {
+		"station_id" : "395",
+		"vehicle_id" : "615",
+		"vehicle_type" : "Bike",
+		"charging_status" : ""
+	}
 }
 ```
  
  You will find an example [here](
 https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushVehicles.json).
 
+## Data types
+
+### station
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| station_id | String | M | Unique identifier of a station. |
+| name | String | O | Public name of the station. |
+| latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
+| longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For example: 7.44426 |
+| address | String | M | Valid street and street number where station is located. |
+| place | String | M | Name of the village/town where station is located. |
+| postcode | Integer | M | Postal code where station is located. |
+| station_status | One of: | M | Indicates the status of the station. The following characteristics are possible: open, closed, out of service, unknown |
+| vehicle_number | Integer | M | Amount of available vehicles. |
+
+### vehicle
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| vehicle_id | String | M | Unique vehicle id. Is defined by the provider|
+| vehicle_status | String | M | Indicates the state of a vehicle. The following characteristics are possible: active, inactive, unknown. |
+| vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
+| charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
 
 ## Open questions
+Please refer to [Issues](https://github.com/SFOE/SwissSharedMobility/issues) for ongoing discussions and open questions.
