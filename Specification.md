@@ -41,7 +41,7 @@ A **station** is a physical place containing assets (vehicles) of a specific sha
 A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
 
-![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/swisssharedmobility_overview.png)
+![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/SSMDS_UML.png)
 
 
 ## Services
