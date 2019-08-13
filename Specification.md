@@ -21,9 +21,12 @@ This document explains the SwissSharedMobility data exchange standard.
 
 ## Introduction
 The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It consists of different individual services. Therefore operators can introduce the data exchange standard in stages. The SwissSharedMobility standard is inspired by the following sources:
-* [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference/)
-* [General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)
-* [Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)
+
+| Source  | Scope |
+| --------------------- | ------------- |
+|[General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference/)| Public transportation schedules and associated geographic information. |
+|[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Provide the status of the system at this moment. Bikesharing only. |
+|[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications and data sharing requirements focused on dockless e-scooters and bicycles. |
 
 
 
