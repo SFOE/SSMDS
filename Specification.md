@@ -20,7 +20,9 @@ This document explains the SwissSharedMobility data exchange standard.
 
 
 ## Introduction
-The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilities such as bikes, cars or scooters. It consists of different individual services. Therefore operators can introduce the data exchange standard in stages. The SwissSharedMobility standard is inspired by the following sources:
+The SwissSharedMobility standard is a data exchange standard for shared mobility assets and aims to describe static and real-time data (such as availability or position) for all kinds of shared mobilitiy assets such as bikes, cars or scooters. It consists of different individual services. Therefore operators can introduce the data exchange standard in stages.
+
+The SwissSharedMobility standard is inspired by the following sources:
 
 | Source  | Scope |
 | --------------------- | ------------- |
