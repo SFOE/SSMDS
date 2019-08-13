@@ -16,6 +16,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
 	* [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType)
 	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
+* [Best practice](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#bestpractice)
 * [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#openquestions)
 
 
@@ -239,6 +240,12 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 | vehicle_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
 | vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
+
+
+## Best practice
+
+### Free-floating: (E)-Bikes, (E)-Cars, (E)-Scooters...
+Generate a station per vehicle. The dynamic part of the data is the location of the station/vehicle (latitude, longitude).
 
 ## Open questions
 Please refer to [Issues](https://github.com/SFOE/SwissSharedMobility/issues) for ongoing discussions and open questions.
