@@ -23,9 +23,9 @@ The SwissSharedMobility standard is a data exchange standard for shared mobility
 
 ## Overview
 
-A sharing **system** is identified by a unique system_id and described with information about the operator.
+A sharing **system** provides transportation to its customers by means of shared assets (for example bicycles or cars) on an as-needed basis. A sharing system is identified by a unique system_id and described with information about the operator.
 
-A **station** is a place described by coordinates where vehicles are positioned. Every station belongs to a sharing system.
+A **station** is a physical place containing assets (vehicles) of a specific sharing system. A station is described by coordinates. Every station belongs to a sharing system.
 
 A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
