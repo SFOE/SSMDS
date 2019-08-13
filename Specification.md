@@ -10,6 +10,7 @@ This document explains the SwissSharedMobility data exchange standard.
 * [Messages](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#messaged)
 	* [SwissSharedMobilityAcknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#SwissSharedMobilityAcknowledgement)
 * [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#datatypes)
+	* [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
 	* [status](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#status)
@@ -38,7 +39,7 @@ To address the data exchange based on the defined entities, the following servic
 
 Mandatory:
  * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
- * [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstation)
+ * [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstations)
  * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
 Optional:
@@ -166,10 +167,10 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 
 | Option | Description |
 | ------------- | ------------- |
-| fullLoad |  |
-| update |  |
-| insert |  |
-| delete |  |
+| fullLoad | The complete dataset is transmitted. All data will be replaced by the newly transmitted data. |
+| update | Only changed entries are transmitted. The changed entries will be updated. |
+| insert | Only new entries are transmitted. The new entries will be added to the data. |
+| delete | Only to be deleted entries are transmitted. Those entries will be deleted in the data. |
 
 ### station
 
