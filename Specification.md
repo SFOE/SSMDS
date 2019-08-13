@@ -27,8 +27,8 @@ The SwissSharedMobility standard is inspired by the following sources:
 | Source  | Scope |
 | --------------------- | ------------- |
 |[General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference/)| Public transportation schedules and associated geographic information. |
-|[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Provide the status of the system at this moment. Bikesharing only. |
-|[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications and data sharing requirements focused on dockless e-scooters and bicycles. |
+|[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Status of bikesharing systems at this moment. |
+|[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications focused on dockless e-scooters and bicycles. |
 
 
 
