@@ -25,11 +25,11 @@ The SSMDS is a data exchange standard for shared mobility assets and aims to des
 
 The SwissSharedMobility standard is inspired by the following sources:
 
-| Source  | Scope |
-| --------------------- | ------------- |
-|[General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference/)| Public transportation schedules and associated geographic information. |
-|[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Standardized data feed for bike share system availability. |
-|[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications focused on dockless e-scooters and bicycles. |
+| Source  | Scope | Ongoing development |
+| --------------------- | ------------- |------------- |
+|[General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/reference/)| Public transportation schedules and associated geographic information. | |
+|[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Standardized data feed for bike share system availability. | [Allow vehicle type definitions / generalize to other modes](https://github.com/NABSA/gbfs/pull/136) & [Improvements to GBFS](https://github.com/NABSA/gbfs/issues/137) |
+|[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications focused on dockless e-scooters and bicycles. | [Update MDS / MDS-Provider to support multiple modes](https://github.com/CityOfLosAngeles/mobility-data-specification/pull/255) |
 
 
 
