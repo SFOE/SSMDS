@@ -12,6 +12,7 @@ This document explains the SwissSharedMobility data exchange standard.
 * [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#datatypes)
 	* [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
+	* [addressType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#addressType)
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
 	* [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType)
 	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
@@ -128,8 +129,6 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  
  You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushStation.json).
  
-
- 
  
  ### SwissSharedMobilityPushVehicles
  
@@ -191,6 +190,15 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 | insert | Only new entries are transmitted. The new entries will be added to the data. |
 | delete | Only to be deleted entries are transmitted. Those entries will be deleted in the data. |
 
+### addressType
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- | --- |
+| city | String | M |  |
+| street | String | M |  |
+| postalCode | String | O |  |
+| houseNum | String | O |  |
+
 ### station
 
 | Name  | Data Type | M/O | Description |
@@ -199,9 +207,7 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 | name | String | O | Public name of the station. |
 | latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
 | longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For example: 7.44426 |
-| address | String | M | Valid street and street number where station is located. |
-| place | String | M | Name of the village/town where station is located. |
-| postcode | Integer | M | Postal code where station is located. |
+| address | [addressType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#addressType) | M | Valid street and street number where station is located. |
 | station_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
 | vehicle_number | Integer | M | Amount of available vehicles. |
 
