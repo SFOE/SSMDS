@@ -90,7 +90,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
 | fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
-| stations | [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station) | M | Array that contains one object per station. See below for definition of data type station. |
+| stations | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. See below for definition of data type station. |
 
  
 **Example in JSON**
@@ -99,7 +99,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 {
 	"actionType" : "fullLoad",
 	"fk_system_id" : "nextbike_ch",
-	"stations" : {
+	"stations" : [{
 		"station_id" : "46",
 		"name" : "BE346633",
 		"latitude" : "46.960044",
@@ -108,7 +108,16 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 		"place" : "Bern",
 		"postcode" : "3014",
 		"station_status" : "open"
-	}
+	},{
+		"station_id" : "47",
+		"name" : "BE346635",
+		"latitude" : "46.85564",
+		"longitude" : "7.490025",
+		"adress" : "Bahnhofstrasse 23",
+		"place" : "Bern",
+		"postcode" : "3000",
+		"station_status" : "open"
+	}]
 }
 ```
  
@@ -125,7 +134,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
 | fk_station_id | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
-| vehicles | [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle) | M | Array that contains one object per station. See below for definition of data type station. |
+| vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. See below for definition of data type station. |
 
 
 **Example in JSON**
@@ -134,12 +143,17 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 {
 	"actionType" : "fullLoad",
 	"fk_station_id" : "nextbike_ch",
-	"vehicles" : {
+	"vehicles" : [{
 		"station_id" : "395",
 		"vehicle_id" : "615",
 		"vehicle_type" : "Bike",
 		"charging_status" : ""
-	}
+	},{
+		"station_id" : "396",
+		"vehicle_id" : "616",
+		"vehicle_type" : "Bike",
+		"charging_status" : ""
+	}]
 }
 ```
  
