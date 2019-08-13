@@ -31,6 +31,9 @@ A **vehicle** is a shared mobility asset such as a bike. When its not used it be
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/images/swisssharedmobility_overview.png)
 
+
+## Services
+
 To address the data exchange based on the defined entities, the following services are established:
 
 Mandatory:
@@ -45,8 +48,6 @@ Optional:
 * SwissSharedMobilityPushPricing (not available yet)
 * SwissSharedMobilityPushAlerts (not available yet)
 * to be extended
-
-## Services
 
 ### SwissSharedMobilityPushSystem
 
@@ -150,9 +151,16 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
-| result | Boolean | M | True if the message was received and processed successfully. False if not. |
+| result | [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType) | M |  |
 
 ## Data types
+
+### acknowledgementType
+
+| Option | Description |
+| ------------- | ------------- |
+| 000 | Success |
+| 901 | Data not compliant with standard |
 
 ### actionType
 
