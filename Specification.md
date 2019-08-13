@@ -115,18 +115,21 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 		"name" : "BE346633",
 		"latitude" : "46.960044",
 		"longitude" : "7.458879",
-		"adress" : "Schärerstrasse 23",
-		"place" : "Bern",
-		"postcode" : "3014",
+		"address" : {
+			"street": "Schärerstrasse",
+			"houseNum": "23",
+			"city": "Bern"
+		},
 		"station_status" : "open"
 	},{
 		"station_id" : "47",
 		"name" : "BE346635",
 		"latitude" : "46.85564",
 		"longitude" : "7.490025",
-		"adress" : "Bahnhofstrasse 23",
-		"place" : "Bern",
-		"postcode" : "3000",
+		"address" : {
+			"street": "Bahnhofstrasse",
+			"city": "Bern"
+		},
 		"station_status" : "open"
 	}]
 }
