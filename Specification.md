@@ -16,7 +16,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
 	* [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType)
 	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
-* [Best practice](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#bestpractice)
+* [Best practice](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#best-practice)
 * [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#openquestions)
 
 
