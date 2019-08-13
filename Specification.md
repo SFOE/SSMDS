@@ -13,7 +13,7 @@ This document explains the SwissSharedMobility data exchange standard.
 	* [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
 	* [station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)
-	* [status](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#status)
+	* [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType)
 	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
 * [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#openquestions)
 
@@ -197,10 +197,10 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 | address | String | M | Valid street and street number where station is located. |
 | place | String | M | Name of the village/town where station is located. |
 | postcode | Integer | M | Postal code where station is located. |
-| station_status | [status](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#status) | M | Indicates the status of the station. |
+| station_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
 | vehicle_number | Integer | M | Amount of available vehicles. |
 
-### status
+### statusType
 
 | Option | Description |
 | ------------- | ------------- |
@@ -217,7 +217,7 @@ https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobility
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | vehicle_id | String | M | Unique vehicle id. Is defined by the provider|
-| vehicle_status | [status](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#status) | M | Indicates the state of a vehicle. |
+| vehicle_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
 | vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
 
