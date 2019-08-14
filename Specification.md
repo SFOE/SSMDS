@@ -1,4 +1,4 @@
-# Specification
+# Swiss Shared Mobility Data Specification (SSMDS)
 This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 
 * [Introduction](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#introduction)
@@ -70,6 +70,7 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 | ------------- | ------------- | ------------- |--- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
 | system_id  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| type | [systemType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#systemtype) | M | Type of the system. |
 | language | String | M | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
 | name  | String | M  |  	Full name of the system to be displayed to customers. | 
 | operator | String | O | Name of the operator of the system. |
@@ -226,6 +227,12 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | NotFound |  |
 | Unknown |  |
 
+### systemType
+
+| Option | Description |
+| ------------- | ------------- |
+| Docks |  |
+| Dockless |  |
 
 ### vehicle
 
