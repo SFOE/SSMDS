@@ -245,6 +245,13 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | vehicleType | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | chargingStatus | String | O | e-vehicles have to indicate the charging status of the battery. |
 
+### vehicleType
+
+| Option | Description |
+| ------------- | ------------- |
+| Bike |  |
+| E-Bike 25 km/h |  |
+| E-Bike 40 km/h |  |
 
 ## Best practice
 
