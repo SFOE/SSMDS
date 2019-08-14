@@ -145,7 +145,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type station. |
+| vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type vehicle. |
 
 
 **Example in JSON**
