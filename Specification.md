@@ -121,7 +121,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 			"houseNumber": "23",
 			"city": "Bern"
 		},
-		"stationStatus" : "open"
+		"stationStatus" : "Available"
 	},{
 		"stationId" : "47",
 		"name" : "BE346635",
@@ -131,7 +131,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 			"street": "Bahnhofstrasse",
 			"city": "Bern"
 		},
-		"stationStatus" : "open"
+		"stationStatus" : "Available"
 	}]
 }
 ```
@@ -145,7 +145,6 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| foreignKeyStation | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 | vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type station. |
 
 
@@ -154,14 +153,15 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
   ```json
 {
 	"actionType" : "fullLoad",
-	"foreignKeyStation" : "46",
 	"vehicles" : [{
 		"stationId" : "395",
+		"foreignKeyStation" : "46",
 		"vehicleId" : "615",
 		"vehicleStatus" : "Available",
 		"vehicleType" : "Bike"
 	},{
 		"stationId" : "395",
+		"foreignKeyStation" : "46",		
 		"vehicleId" : "616",
 		"vehicleStatus" : "Available",
 		"vehicleType" : "Bike"
@@ -239,7 +239,8 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
-| vehicleId | String | M | Unique vehicle id. Is defined by the provider|
+| vehicleId | String | M | Unique vehicle id. Is defined by the provider |
+| foreignKeyStation | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem). |
 | vehicleStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
 | vehicleType | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | chargingStatus | String | O | e-vehicles have to indicate the charging status of the battery. |
