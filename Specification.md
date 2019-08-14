@@ -31,7 +31,7 @@ SSMDS is inspired by the following sources:
 |[General Bikeshare Feed Specification (GBFS)](https://github.com/NABSA/gbfs/blob/master/README.md)| Standardized data feed for bike share system availability. | [Allow vehicle type definitions / generalize to other modes](https://github.com/NABSA/gbfs/pull/136) & [Improvements to GBFS](https://github.com/NABSA/gbfs/issues/137) |
 |[Mobility Data Specification (MDS)](https://github.com/CityOfLosAngeles/mobility-data-specification)| Data specifications focused on dockless e-scooters and bicycles. | [Update MDS / MDS-Provider to support multiple modes](https://github.com/CityOfLosAngeles/mobility-data-specification/pull/255) |
 
-Unfortunately, for the time being GBFS and MDS have limited scopes: GBFS only supports bikesharing and MDS only supports dockless e-scooters and bikes. Therefore, we decided to establish a new standard, which is generic and able to support all kinds of shared mobility assets.
+Unfortunately, for the time being GBFS and MDS have limited scopes: GBFS only supports bikesharing and MDS only supports dockless e-scooters and bikes. Therefore, we decided to establish a new standard, which is generic and able to support all kinds of shared mobility assets as well as systems.
 
 ## Overview
 
