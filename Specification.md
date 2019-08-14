@@ -69,8 +69,8 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| system_id  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
-| type | [systemType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#systemtype) | M | Type of the system. |
+| systemId  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| systemType | [systemType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#systemtype) | M | Type of the system. |
 | language | String | M | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
 | name  | String | M  |  	Full name of the system to be displayed to customers. | 
 | operator | String | O | Name of the operator of the system. |
@@ -100,7 +100,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| fk_system_id | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
+| foreignKeySystem | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 | stations | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. Array of Objects. See below for definition of data type station. |
 
  
@@ -144,7 +144,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| fk_station_id | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
+| foreignKeyStation | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
 | vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type station. |
 
 
@@ -208,13 +208,13 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
-| station_id | String | M | Unique identifier of a station. |
+| stationId | String | M | Unique identifier of a station. |
 | name | String | O | Public name of the station. |
 | latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
 | longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For example: 7.44426 |
 | address | [addressType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#addressType) | M | Valid street and street number where station is located. |
-| station_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
-| vehicle_number | Integer | M | Amount of available vehicles. |
+| stationStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
+| availableVehicles | Integer | M | Amount of available vehicles. |
 
 ### statusType
 
@@ -238,10 +238,10 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
-| vehicle_id | String | M | Unique vehicle id. Is defined by the provider|
-| vehicle_status | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
-| vehicle_type | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
-| charging_status | String | O | e-vehicles have to indicate the charging status of the battery. |
+| vehicleId | String | M | Unique vehicle id. Is defined by the provider|
+| vehicleStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
+| vehicleType | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
+| chargingStatus | String | O | e-vehicles have to indicate the charging status of the battery. |
 
 
 ## Best practice
