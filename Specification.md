@@ -82,7 +82,8 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
  ```json
 {
 		"actionType" : "fullLoad",
-		"system_id" : "nextbike_ch",
+		"systemId" : "nextbike_ch",
+		"systemType" : "Docks",
 		"language" : "de",
 		"name" : "nextbike Switzerland",
 		"operator" : "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German",
@@ -109,20 +110,20 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  ```json
 {
 	"actionType" : "fullLoad",
-	"fk_system_id" : "nextbike_ch",
+	"foreignKeySystem" : "nextbike_ch",
 	"stations" : [{
-		"station_id" : "46",
+		"stationId" : "46",
 		"name" : "BE346633",
 		"latitude" : "46.960044",
 		"longitude" : "7.458879",
 		"address" : {
 			"street": "Schärerstrasse",
-			"houseNum": "23",
+			"houseNumber": "23",
 			"city": "Bern"
 		},
-		"station_status" : "open"
+		"stationStatus" : "open"
 	},{
-		"station_id" : "47",
+		"stationId" : "47",
 		"name" : "BE346635",
 		"latitude" : "46.85564",
 		"longitude" : "7.490025",
@@ -130,7 +131,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 			"street": "Bahnhofstrasse",
 			"city": "Bern"
 		},
-		"station_status" : "open"
+		"stationStatus" : "open"
 	}]
 }
 ```
@@ -153,17 +154,17 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
   ```json
 {
 	"actionType" : "fullLoad",
-	"fk_station_id" : "nextbike_ch",
+	"foreignKeyStation" : "46",
 	"vehicles" : [{
-		"station_id" : "395",
-		"vehicle_id" : "615",
-		"vehicle_type" : "Bike",
-		"charging_status" : ""
+		"stationId" : "395",
+		"vehicleId" : "615",
+		"vehicleStatus" : "Available",
+		"vehicleType" : "Bike"
 	},{
-		"station_id" : "396",
-		"vehicle_id" : "616",
-		"vehicle_type" : "Bike",
-		"charging_status" : ""
+		"stationId" : "395",
+		"vehicleId" : "616",
+		"vehicleStatus" : "Available",
+		"vehicleType" : "Bike"
 	}]
 }
 ```
@@ -202,7 +203,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | city | String | M |  |
 | street | String | M |  |
 | postalCode | String | O |  |
-| houseNum | String | O |  |
+| houseNumber | String | O |  |
 
 ### station
 
