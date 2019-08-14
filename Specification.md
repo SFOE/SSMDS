@@ -90,8 +90,6 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 }
 ```
   
- You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushSystem.json).
-  
  
   
 ### SwissSharedMobilityPushStations
@@ -136,7 +134,6 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 }
 ```
  
- You will find an example in geoJSON [here](https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushStation.json).
  
  
  ### SwissSharedMobilityPushVehicles
@@ -170,8 +167,6 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 }
 ```
  
- You will find an example [here](
-https://github.com/SFOE/SwissSharedMobility/blob/master/Json/SwissSharedMobilityPushVehicles.json).
 
 ## Messages
 
