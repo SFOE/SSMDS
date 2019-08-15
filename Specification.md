@@ -37,7 +37,7 @@ Unfortunately, for the time being GBFS and MDS have limited scopes: GBFS only su
 
 ## Overview
 
-A sharing **system** provides transportation to its customers by means of shared assets (for example bicycles or cars) on an as-needed basis. A sharing system is identified by a unique system_id and described with information about the operator.
+A sharing **system** provides transportation to its customers by means of shared assets (for example bicycles or cars) on an as-needed basis. A sharing system is identified by a unique systemId and described by information about the operator.
 
 A **station** is a physical place containing assets (vehicles) of a specific sharing system. A station is described by coordinates. Every station belongs to a sharing system.
 
