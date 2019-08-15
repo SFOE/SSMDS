@@ -23,7 +23,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 
 
 ## Introduction
-The SSMDS is a generic data exchange standard for all kinds of shared mobility assets such as bikes, cars or scooters and aims to describe static and real-time data (such as availability or position).
+The SSMDS is a generic data exchange standard for all kinds of shared mobility assets such as bikes, cars or scooters as well as sharing-systems and aims to describe static and real-time data (such as availability or position).
 
 SSMDS is inspired by the following sources:
 
