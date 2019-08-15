@@ -150,7 +150,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type vehicle. |
 
 
-**Example in JSON**
+**Example in JSON (fullLoad)**
  
   ```json
 {
@@ -171,6 +171,20 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 }
 ```
  
+**Example in JSON (update)**
+ 
+  ```json
+{
+	"actionType" : "update",
+	"vehicles" : [{
+		"stationId" : "395",
+		"foreignKeyStation" : "46",
+		"vehicleId" : "615",
+		"vehicleStatus" : "Occupied",
+		"vehicleType" : "Bike"
+	}]
+}
+``` 
 
 ## Messages
 
