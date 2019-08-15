@@ -57,11 +57,11 @@ Mandatory:
  * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
 
 Optional:
-* SwissSharedMobilityPushHours (not available yet)
-* SwissSharedMobilityPushCalendar (not available yet)
-* SwissSharedMobilityPushRegions (not available yet)
-* SwissSharedMobilityPushPricing (not available yet)
-* SwissSharedMobilityPushAlerts (not available yet)
+* SwissSharedMobilityPushHours (not yet available)
+* SwissSharedMobilityPushCalendar (not yet available)
+* SwissSharedMobilityPushRegions (not yet available)
+* SwissSharedMobilityPushPricing (not yet available)
+* SwissSharedMobilityPushAlerts (not yet available)
 * to be extended
 
 ### SwissSharedMobilityPushSystem
@@ -71,7 +71,7 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| systemId  | String | M |  ID field - identifier for this sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| systemId  | String | M |  Identifier for the sharing system. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
 | systemType | [systemType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#systemtype) | M | Type of the system. |
 | language | String | M | An IETF language tag indicating the language that will be used throughout the rest of the files. This is a string that defines a single language tag only. | 
 | name  | String | M  |  	Full name of the system to be displayed to customers. | 
@@ -85,7 +85,7 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 {
 		"actionType" : "fullLoad",
 		"systemId" : "nextbike_ch",
-		"systemType" : "Docks",
+		"systemType" : "BikesDocks",
 		"language" : "de",
 		"name" : "nextbike Switzerland",
 		"operator" : "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German",
@@ -234,8 +234,10 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 
 | Option | Description |
 | ------------- | ------------- |
-| Docks |  |
-| Dockless |  |
+| BikesDocks |  |
+| BikesDockless |  |
+| EBikesDocks |  |
+| EBikesDockless |  |
 
 ### vehicle
 
