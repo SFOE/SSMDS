@@ -52,11 +52,12 @@ A **vehicle** is a shared mobility asset such as a bike. When its not used it be
 To address the data exchange based on the defined entities, the following services are established:
 
 Mandatory:
- * [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem)
- * [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushstations)
- * [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushvehicles)
+ * [System](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#system)
+ * [Stations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#stations)
+ * [Vehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicles)
 
 Optional:
+* [AllowedAreas](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedareas)
 * SwissSharedMobilityPushHours (not yet available)
 * SwissSharedMobilityPushCalendar (not yet available)
 * SwissSharedMobilityPushRegions (not yet available)
@@ -64,9 +65,7 @@ Optional:
 * SwissSharedMobilityPushAlerts (not yet available)
 * to be extended
 
-### AllowedArea
-
-SwissSharedMobilityPushAllowedArea is a message that is sent in order to upload allowed areas.
+### AllowedAreas
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
@@ -76,8 +75,6 @@ SwissSharedMobilityPushAllowedArea is a message that is sent in order to upload 
 | geometry | MultiPolygon | O | to be defined. |
 
 ### System
-
-SwissSharedMobilityPushSystem is a message that is sent in order to upload system data.
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
@@ -109,8 +106,6 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
  
   
 ### Stations
-
-SwissSharedMobilityPushStations is a message that is sent in order to upload data about the stations.
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
@@ -154,9 +149,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  
  ### Vehicles
  
- SwissSharedMobilityPushVehicles is a message that is sent in order to upload data about the vehicles.
- 
- | Name  | Data Type | M/O | Description |
+| Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
 | vehicles | List ([vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)) | M | List of vehicles. Array of Objects. See below for definition of data type vehicle. |
