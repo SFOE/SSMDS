@@ -78,6 +78,7 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
 | operator | String | O | Name of the operator of the system. |
 | url | URI | O | The URL of the sharing system. The value must be a fully qualified URL that includes http:// or https://, and any special characters in the URL must be correctly escaped. |
 | email | String | O | A single contact email address for customers to address questions about the system. |
+| hotline | String | M | Hotline Phone Number. |
 
  **Example in JSON**
  
@@ -221,6 +222,14 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | postalCode | String | O |  |
 | houseNumber | String | O |  |
 
+### requirement
+
+| Option | Description |
+| ------------- | ------------- |
+| No requirements |  |
+| Driving licence category A1 |  |
+| Helmtragepflicht |  |
+
 ### station
 
 | Name  | Data Type | M/O | Description |
@@ -229,9 +238,12 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | name | String | O | Public name of the station. |
 | latitude | Float | M | The latitude of station. The field value must be a valid WGS 84 latitude in decimal degrees format. For example: 46.94648 |
 | longitude | Float | M | The longitude of station. The field value must be a valid WGS 84 longitude in decimal degrees format. For example: 7.44426 |
-| address | [addressType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#addressType) | M | Valid street and street number where station is located. |
+| address | [addressType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#addressType) | O | Valid street and street number where station is located. |
 | stationStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
 | availableVehicles | Integer | M | Amount of available vehicles. |
+| accessDescription | String | O |  |
+| openingHours | String | O |  |
+
 
 ### statusType
 
@@ -261,7 +273,10 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 | foreignKeyStation | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem). |
 | vehicleStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
 | vehicleType | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
+| vehicleBooking | String | O | Deeplink to the providers booking system. |
+| requirements | List ([requirement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#requirement))  | M | List of requirements. Array of Objects. See below for definition of data type. |
 | chargingStatus | String | O | e-vehicles have to indicate the charging status of the battery. |
+| travelTo | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. Array of Objects. See below for definition of data type station. |
 
 ### vehicleType
 
