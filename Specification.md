@@ -4,11 +4,11 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 * [Introduction](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#introduction)
 * [Overview](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#overview)
 * [Services](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#services)
-	* [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
-	* [SwissSharedMobilityPushStations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushStations)
-	* [SwissSharedMobilityPushVehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushVehicles)
+	* [System](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
+	* [Stations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushStations)
+	* [Vehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushVehicles)
 * [Messages](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#messages)
-	* [SwissSharedMobilityAcknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#SwissSharedMobilityAcknowledgement)
+	* [Acknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#SwissSharedMobilityAcknowledgement)
 * [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#data-types)
 	* [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
@@ -43,6 +43,8 @@ A **station** is a physical place containing assets (vehicles) of a specific sha
 
 A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
+An **allowedArea** is an area...
+
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/SSMDS_UML.png)
 
@@ -65,7 +67,7 @@ Optional:
 * SwissSharedMobilityPushAlerts (not yet available)
 * to be extended
 
-### AllowedAreas
+### AllowedArea
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- |--- |
@@ -110,7 +112,7 @@ Optional:
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| foreignKeySystem | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem).
+| foreignKeySystem | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem). |
 | stations | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. Array of Objects. See below for definition of data type station. |
 
  
@@ -281,6 +283,7 @@ Optional:
 | requirements | List ([requirement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#requirement))  | M | List of requirements. Array of Objects. See below for definition of data type. |
 | chargingStatus | String | O | e-vehicles have to indicate the charging status of the battery. |
 | travelTo | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. Array of Objects. See below for definition of data type station. |
+| foreignKeyAllowedArea | String | O | Foreign key of the allowed area as defined in [allowedArea](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedarea). |
 
 ### vehicleType
 
