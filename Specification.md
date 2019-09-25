@@ -47,7 +47,7 @@ A **vehicle** is a shared mobility asset such as a bike. When its not used it be
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/SSMDS_UML.png)
 
 
-## Services
+## Entities
 
 To address the data exchange based on the defined entities, the following services are established:
 
@@ -64,7 +64,18 @@ Optional:
 * SwissSharedMobilityPushAlerts (not yet available)
 * to be extended
 
-### SwissSharedMobilityPushSystem
+### AllowedArea
+
+SwissSharedMobilityPushAllowedArea is a message that is sent in order to upload allowed areas.
+
+| Name  | Data Type | M/O | Description |
+| ------------- | ------------- | ------------- |--- |
+| actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
+| allowedAreaId  | String | M |  Identifier for the allowed area. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
+| name  | String | O | Full name of the system to be displayed to customers. | 
+| geometry | MultiPolygon | O | to be defined. |
+
+### System
 
 SwissSharedMobilityPushSystem is a message that is sent in order to upload system data.
 
@@ -97,7 +108,7 @@ SwissSharedMobilityPushSystem is a message that is sent in order to upload syste
   
  
   
-### SwissSharedMobilityPushStations
+### Stations
 
 SwissSharedMobilityPushStations is a message that is sent in order to upload data about the stations.
 
@@ -141,7 +152,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
  
  
  
- ### SwissSharedMobilityPushVehicles
+ ### Vehicles
  
  SwissSharedMobilityPushVehicles is a message that is sent in order to upload data about the vehicles.
  
@@ -189,7 +200,7 @@ SwissSharedMobilityPushStations is a message that is sent in order to upload dat
 
 ## Messages
 
-### SwissSharedMobilityAcknowledgement
+### Acknowledgement
 
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
