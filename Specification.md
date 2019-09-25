@@ -112,7 +112,7 @@ Optional:
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
-| foreignKeySystem | String | M | Foreign key of the sharing system as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem). |
+| foreignKeySystem | String | M | Foreign key of the sharing system as defined in [System](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#system). |
 | stations | List ([station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station)) | M | List of stations. Array of Objects. See below for definition of data type station. |
 
  
@@ -276,7 +276,7 @@ Optional:
 | Name  | Data Type | M/O | Description |
 | ------------- | ------------- | ------------- | --- |
 | vehicleId | String | M | Unique vehicle id. Is defined by the provider |
-| foreignKeyStation | String | M | Foreign key of the station as defined in [SwissSharedMobilityPushSystem](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swisssharedmobilitypushsystem). |
+| foreignKeyStation | String | M | Foreign key of the station as defined in [Station](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#station). |
 | vehicleStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the state of a vehicle. |
 | vehicleType | String | M | Indicates the vehicle type. Vehicle types are predefined in a catalogue. |
 | vehicleBooking | String | O | Deeplink to the providers booking system. |
