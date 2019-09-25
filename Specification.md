@@ -74,7 +74,22 @@ Optional:
 | actionType | [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype) | M | The action that has to be performed with the provided data. |
 | allowedAreaId  | String | M |  Identifier for the allowed area. This should be globally unique (even between different systems) and it is currently up to the operator to guarantee uniqueness. In addition, this value is intended to remain the same over the life of the system. | 
 | name  | String | O | Full name of the system to be displayed to customers. | 
-| geometry | MultiPolygon | O | to be defined. |
+| geometry | Polygon | O | A GeoJSON polygon. |
+
+**Example in JSON**
+ 
+ ```json
+{
+		"actionType" : "fullLoad",
+		"allowedAreaId" : "my_area_ch_01264",
+		"name" : "this is my area",
+		"geometry" : {
+			"type" : "Polygon",
+			"coordinates": [[[-121, 39], [-119, 39], [-119, 41], [-121, 41], [-121, 39]]]
+		}
+}
+```
+  
 
 ### System
 
