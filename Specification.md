@@ -284,11 +284,6 @@ Optional:
 | BikesDocks |  |
 | BikesDockless |  |
 | EBikesDocks |  |
-| EBikesDockless |  |
-| Cargobikes |  |
-| E-Scooters |  |
-| E-Trottis |  |
-| Light Electric Vehicles | e.g. ENUU in Biel  |
 
 ### vehicle
 
@@ -311,6 +306,11 @@ Optional:
 | Bike |  |
 | E-Bike 25 km/h |  |
 | E-Bike 40 km/h |  |
+| EBikesDockless |  |
+| Cargobikes |  |
+| E-Scooters |  |
+| E-Trottis |  |
+| Light Electric Vehicles | e.g. ENUU in Biel  |
 
 ## Best practice
 
