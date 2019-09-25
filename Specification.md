@@ -60,11 +60,11 @@ Mandatory:
 
 Optional:
 * [AllowedAreas](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedareas)
-* SwissSharedMobilityPushHours (not yet available)
-* SwissSharedMobilityPushCalendar (not yet available)
-* SwissSharedMobilityPushRegions (not yet available)
-* SwissSharedMobilityPushPricing (not yet available)
-* SwissSharedMobilityPushAlerts (not yet available)
+* Hours (not yet available)
+* Calendar (not yet available)
+* Regions (not yet available)
+* Pricing (not yet available)
+* PushAlerts (not yet available)
 * to be extended
 
 ### AllowedArea
@@ -285,6 +285,10 @@ Optional:
 | BikesDockless |  |
 | EBikesDocks |  |
 | EBikesDockless |  |
+| Cargobikes |  |
+| E-Scooters |  |
+| E-Trottis |  |
+| Light Electric Vehicles | e.g. ENUU in Biel  |
 
 ### vehicle
 
