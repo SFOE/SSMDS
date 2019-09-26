@@ -4,7 +4,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 * [Introduction](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#introduction)
 * [Overview](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#overview)
 * [Entities](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#entities)
-	* [AllowedArea](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
+	* [AllowedArea](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedarea)
 	* [System](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushSystem)
 	* [Stations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushStations)
 	* [Vehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#swissSharedMobilityPushVehicles)
