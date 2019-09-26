@@ -9,7 +9,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 	* [Stations](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#stations)
 	* [Vehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicles)
 * [Messages](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#messages)
-	* [Acknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#SwissSharedMobilityAcknowledgement)
+	* [Acknowledgement](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgement)
 * [Data types](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#data-types)
 	* [acknowledgementType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#acknowledgementType)
 	* [actionType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#actiontype)
@@ -20,7 +20,7 @@ This document explains the Swiss Shared Mobility Data Specification (SSMDS).
 	* [vehicle](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicle)
 	* [vehicleType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicleType)
 * [Best practice](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#best-practice)
-* [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#openquestions)
+* [Open questions](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#open questions)
 
 
 ## Introduction
