@@ -60,7 +60,7 @@ Mandatory:
  * [Vehicles](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#vehicles)
 
 Optional:
-* [AllowedAreas](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedareas)
+* [AllowedAreas](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#allowedarea)
 * Hours (not yet available)
 * Calendar (not yet available)
 * Regions (not yet available)
