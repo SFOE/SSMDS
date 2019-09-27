@@ -269,7 +269,7 @@ Optional:
 | stationStatus | [statusType](https://github.com/SFOE/SwissSharedMobility/blob/master/Specification.md#statusType) | M | Indicates the status of the station. |
 | availableVehicles | Integer | M | Amount of available vehicles. |
 | accessDescription | String | O |  |
-| openingHours | String | O |  |
+| openingHours | String | O | As described in: https://schema.org/openingHours |
 
 
 ### statusType
