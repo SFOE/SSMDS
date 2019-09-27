@@ -47,7 +47,7 @@ A **vehicle** is a shared mobility asset such as a bike. When its not used it be
 An **allowedArea** is an area...
 
 
-![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/SSMDS_UML.png)
+![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/SSMDS_UML.PNG)
 
 
 ## Entities
