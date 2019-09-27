@@ -44,7 +44,7 @@ A **station** is a physical place containing assets (vehicles) of a specific sha
 
 A **vehicle** is a shared mobility asset such as a bike. When its not used it belongs to a station. Every vehicle belongs to a station.
 
-An **allowedArea** is an area...
+An **allowedArea** also known as "geofence" is an area where share mobility assets are allowed to park.
 
 
 ![alt text](https://github.com/SFOE/SwissSharedMobility/blob/master/SSMDS_UML.PNG)
@@ -117,7 +117,8 @@ Optional:
 		"name" : "nextbike Switzerland",
 		"operator" : "nextbike GmbH, Erich-Zeigner Allee 69-73, 04229 Leipzig, German",
 		"url" : "https://www.nextbike.ch/xx/sursee/",
-		"email" : "info@nextbike.ch"
+		"email" : "info@nextbike.ch",
+		"hotline" : "00416533698"
 }
 ```
   
@@ -148,7 +149,10 @@ Optional:
 			"houseNumber": "23",
 			"city": "Bern"
 		},
-		"stationStatus" : "Available"
+		"stationStatus" : "Available",
+		"availableVehicles" : "1",
+		"accessDescription" : "Bike is just around the corner.",
+		"openingHours" : "Mo,Tu,We,Th 09:00-12:00"
 	},{
 		"stationId" : "47",
 		"name" : "BE346635",
@@ -158,7 +162,8 @@ Optional:
 			"street": "Bahnhofstrasse",
 			"city": "Bern"
 		},
-		"stationStatus" : "Available"
+		"stationStatus" : "Available",
+		"opneingHours" : "Mo-Su"
 	}]
 }
 ```
